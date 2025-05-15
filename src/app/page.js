@@ -14,7 +14,7 @@ export default function Home() {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      const res = await fetch('http://localhost/warehouse/backend/api/index.php', {
+      const res = await fetch('https:/basefood.trendsaf.co/api/test', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
